@@ -1,0 +1,29 @@
+    1  git status
+    2  ls
+    3  cd final_project
+    4  git status
+    5  git add .
+    6  git status
+    7  git commit -am "Login page and notes"
+    8  git push
+    9  git merge master
+   10  git merge login
+   11  git checkout master
+   12  checkout master
+   13  npm install -g graphcool
+   14  git checkout graphcool
+   15  git branch graphcool
+   16  git status
+   17  git branch graphcool
+   18  git checkout graphcool
+   19  graphcool init newsapi
+   20  c;ear
+   21  clear
+   22  cd newsapi
+   23  graphcool deploy
+   24  graphcool playground
+   25  graphcool add-template graphcool/templates/auth/email-password
+   26  graphcool deploy
+   27  graphcool deploy --force
+   28  history mycmd
+   29  history >> mycmd.txt
