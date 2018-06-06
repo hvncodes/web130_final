@@ -3,6 +3,7 @@
 let babel = require('rollup-plugin-babel'),
     js_libs = [
         'node_modules/jquery/dist/jquery.js',
+        'node_modules/js-cookie/src/js.cookie.js',
         'node_modules/bootstrap/dist/js/boostrap.js',
         'js/build/temp.js'
     ];
@@ -78,6 +79,7 @@ module.exports = (grunt) => {
                 tasks: ['dev_js'],
                 files: [
                     'js/*.js',
+                    'js/**/*.js',
                     '!js/build/*.js'
                 ]
             },

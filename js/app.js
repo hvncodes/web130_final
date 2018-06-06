@@ -1,7 +1,2 @@
-class Pumpkin {
-    constructor(pie) {
-        console.log('You ate ' + pie + ' pie.');
-    }
-}
-
-let pumpkin = new Pumpkin('banna cream');
+import './graphql/articles.js';
+import './graphql/login.js';
