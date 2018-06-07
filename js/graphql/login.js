@@ -17,7 +17,7 @@ $(document).ready(function() {
                 password = $('#password').val();
                 
             $.post({
-                url: 'https://api.graph.cool/simple/v1/cjhjspp3l43x40186ohece9if',
+                url: 'https://api.graph.cool/simple/v1/cjhjstyqy94i60177o216azno',
                 data: JSON.stringify({
                     query: loginMutation,
                     variables: {
