@@ -10632,7 +10632,7 @@ $(document).ready(function () {
 });
 
 /* global $ JS_PAGE Cookies */
-
+//admin@example.com -password
 var loginMutation = '\n    mutation AuthenticateUser($email: String!, $password: String!) {\n        authenticateUser(email: $email, password: $password) {\n            id,\n            token\n        }\n    }';
 
 $(document).ready(function () {

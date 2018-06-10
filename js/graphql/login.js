@@ -1,5 +1,5 @@
 /* global $ JS_PAGE Cookies */
-
+//admin@example.com -password
 let loginMutation = `
     mutation AuthenticateUser($email: String!, $password: String!) {
         authenticateUser(email: $email, password: $password) {
