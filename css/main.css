@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Luckiest+Guy|Paytone+One|Titan+One");
 .col-lg-1 {
   float: left;
   width: 8.3333333333%; }
@@ -6450,6 +6451,39 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+body {
+  position: relative; }
+
+#banner {
+  z-index: -1000;
+  position: absolute;
+  top: -200px; }
+
+header {
+  background: red;
+  width: 500px;
+  margin: 0 auto; }
+
+header h1 {
+  font-family: 'Paytone One', sans-serif; }
+
+img {
+  max-width: 100%;
+  max-height: 100%; }
+
+#header-container {
+  position: relative; }
+
+#peach-container {
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -157px; }
+
+#date-weather {
+  text-align: center; }
+
 h1 {
   text-align: center;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -6457,6 +6491,3 @@ h1 {
 h2 {
   font-family: serif;
   text-decoration: underline; }
-
-#date-weather {
-  text-align: center; }
