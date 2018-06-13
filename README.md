@@ -5,13 +5,13 @@
 **An app that uses Graphcool to store users and articles.**
 
 ### Authentication View
-<img src="Login.png" >
+<img src="Login.PNG" >
 
 ### Form View
-<img src="Form.png">
+<img src="Form.PNG">
 
 ### List View
-<img src="Landing.png">
+<img src="Landing.PNG">
 
 ### Detail View
-<img src="Article.png">
+<img src="Article.PNG">
