@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Inconsolata|Luckiest+Guy|Paytone+One|Titan+One");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Luckiest+Guy|Paytone+One|Titan+One|Roboto");
 .col-lg-1 {
   float: left;
   width: 8.3333333333%; }
@@ -166,6 +166,43 @@
   .col-sm-12 {
     float: left;
     width: 100%; } }
+
+textarea {
+  height: 200px; }
+
+#main-content h1, h1#article-title {
+  font-family: 'Paytone One', sans-serif; }
+
+.login-container {
+  background: rgba(255, 255, 255, 0.5);
+  width: 500px;
+  height: 400px;
+  margin: auto auto;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-left: -250px;
+  border: 1px solid yellow;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px; }
+  .login-container .col-sm-2 {
+    max-width: 100%; }
+  .login-container h1 {
+    padding-top: 60px; }
+
+body, html {
+  height: 100%;
+  margin: 0; }
+
+#login-wrapper {
+  position: relative;
+  /* The image used */
+  background-image: url("../img/girl.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
@@ -6627,7 +6664,7 @@ body {
   position: fixed;
   top: 0;
   z-index: 9999;
-  background: #f1f1f1;
+  background: #fffafa;
   border-bottom: 1px solid #aaa; }
 
 #banner {
@@ -6699,6 +6736,33 @@ h1 {
   text-align: center;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-h2 {
-  font-family: serif;
-  text-decoration: underline; }
+body {
+  min-width: 500px; }
+
+#fakead {
+  background-image: url("../img/fakead.jpg");
+  background-size: cover;
+  background-position: center center; }
+  #fakead h1 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    margin-top: 15px; }
+
+main.container {
+  padding: 15px; }
+
+.article-limiter {
+  height: 250px;
+  overflow: hidden; }
+  .article-limiter h2 {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif; }
+
+.article-limiter:before {
+  content: "";
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(transparent 50px, white); }

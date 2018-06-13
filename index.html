@@ -15,13 +15,22 @@
         <div id="topbar">
            <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Latest News</a>
+                    <a class="nav-link active" href="index.html">Home </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
+                    <a class="nav-link active" href="#">Latest</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Science</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tech</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Sponsors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
                 </li>
             </ul>
         </div>
@@ -44,7 +53,8 @@
                         <img src="img/sunny.gif"> 59&#8457;
                     </div>
                     <div id="date-box">
-                        Wednesday, June 13th, 2018
+                        JS loading date...
+                        <!-- day goes here Wednesday, June 13th, 2018 -->
                     </div>
                 </div>
                 
@@ -54,46 +64,39 @@
         <!-- Add article styling here here. -->
         
         <div id="container-wrapper">
+            
             <main class="container">
+                
                 <section class="row">
                     <article class="col-md-8">
-                        <h1 class="headline">Mariners Win!</h1>
+                        <h1 class="headline">Today's Big Headline That Deserves All This Browser Space</h1>
                         <div id="article-1">
                             <h2 class="recent"></h2>
-                            <div>With the Mariners win, the Yankees franchise will now fold!!</div>
+                            <div>Lorem ipsum dolor amet before they 
+                            sold out cardigan helvetica, PBR&B air plant 
+                            fashion axe single-origin coffee kale chips
+                            angry Ibaraki hot chicken vice synth 
+                            umami vinyl pitchfork palo santo. Unicorn
+                            la croix actually pop-up subway tile 
+                            taxidermy food truck.</div>
                         </div>
                     </article>
-                    <article class="col-md-4">
-                        <h1 class="headline">Best News Ever in the world</h1>
+                    <article class="col-md-4" id="fakead">
+                        <h1 class="headline">That Token Annoying Ad, You Know the One</h1>
                         <div id="article-2">
                             <h2 class="content"></h2>
-                            <div>Article 2</div>
+                            <div style="text-align:right; color:yellow; margin-bottom: 5px">Click me, I'm safe!</div>
                         </div>
                     </article>
                 </section>
                 
-                <section class="row">
-                    <article class="col-md-4">
-                        <h1 class="headline">Mariners Tie!</h1>
-                        <div id="article-3">
-                            <h2 class="content"></h2>
-                            <article>Article 3</article>
-                        </div>
-                    </article>
-                    <article class="col-md-4">
-                        <h1 class="headline">Mariners Lose!</h1>
-                        <div id="article-4">
-                            <h2 class="content"></h2>
-                            <div>Article 4</div>
-                        </div>
-                    </article>
-                </section>
             </main>
             
             <main class="container">
                 <div class="row">
                     <div class="col-sm-12" id='main-content'>
-                        <h1>Howdy world!  text is replaced by js</h1>
+                        <!-- this text is replaced by js -->
+                        <h1>Loading...</h1>
                     </div>
                 </div>
             </main>
@@ -102,5 +105,10 @@
             var JS_PAGE = 'list_view';
         </script>
         <script type="text/javascript" src="js/build/app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+        <script>
+            var date = moment().format('dddd, MMMM Do YYYY');
+            document.getElementById('date-box').innerHTML = date;
+        </script>
     </body>
 </html>
