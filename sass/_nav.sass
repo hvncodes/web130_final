@@ -1,17 +1,49 @@
+@import "grid"
 body 
     position: relative
 
+#topbar
+    width: 100%
+    position: fixed
+    top: 0
+    z-index: 9999
+    background: #f1f1f1
+    border-bottom: 1px solid #aaa
+
 #banner
+    //background: blue
+    background-image: url("../img/crowd.png")
+    background-size: cover
+    background-position: center center
     z-index: -1000
-    position: absolute
-    top: -200px
+    height: 350px
+    @include size(medium)
+        height: 300px
+    @include size(small)
+        background-position: center bottom
+        height: 350px
     
+#header-wrapper
+    position: relative
     
 header
-    background: red
-    width: 500px
+    //background: red
+    background: white
     margin: 0 auto
-
+    position: absolute
+    //top: 191px
+    bottom: 0px
+    left: 50%
+    margin-left: -250px
+    border: 1px solid #aaa
+    width: 500px
+    @include size(medium)
+        width: 400px
+        margin-left: -200px
+    @include size(small)
+        width: 100%
+        left: 0
+        margin-left: 0
 header h1
     font-family: 'Paytone One', sans-serif
 
@@ -21,14 +53,22 @@ img
     
 #header-container
     position: relative
+    padding: 5px
+    border-bottom: 1px solid #aaa
+
+#header-container h1
+    margin: 0
 
 #peach-container
     height: 50px
     position: absolute
-    top: 0px
     left: 50%
     margin-left: -157px
 
 #date-weather 
     text-align: center
-    
+    #date-box
+        padding-bottom: 10px
+
+#container-wrapper
+    padding: 20px

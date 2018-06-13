@@ -41,12 +41,14 @@ $(document).ready(function() {
                 let html = '';
                 for (let article of articles) {
                     html += `
-                        <h2>
-                            <a href="article_detail.html#${article.id}">
-                                ${article.title}
-                            </a>
-                        </h2>
-                        <p>${article.content}</p>
+                        <div class="col-sm-12 col-md-6 col-lg-4 article-limiter">
+                            <h2>
+                                <a href="article_detail.html#${article.id}">
+                                    ${article.title}
+                                </a>
+                            </h2>
+                            <p>${article.content}</p>
+                        </div>
                     `;
                 }
                 $('#main-content').html(html);

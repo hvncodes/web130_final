@@ -25,7 +25,7 @@ $(document).ready(function () {
                     for (var _iterator = articles[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
                         var article = _step.value;
 
-                        html += '\n                        <h2>\n                            <a href="article_detail.html#' + article.id + '">\n                                ' + article.title + '\n                            </a>\n                        </h2>\n                        <p>' + article.content + '</p>\n                    ';
+                        html += '\n                        <div class="col-sm-12 col-md-6 col-lg-4 article-limiter">\n                            <h2>\n                                <a href="article_detail.html#' + article.id + '">\n                                    ' + article.title + '\n                                </a>\n                            </h2>\n                            <p>' + article.content + '</p>\n                        </div>\n                    ';
                     }
                 } catch (err) {
                     _didIteratorError = true;
